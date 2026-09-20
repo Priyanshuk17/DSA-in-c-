@@ -12,6 +12,17 @@ struct Node {
         left = right = NULL;
     }
 };
+// this question is to print the inorder traversal of a binary tree iteratively.
+// how to do it:-
+// 1. take the root of the binary tree as input.
+// 2. create a stack to store the nodes of the binary tree.
+// 3. create a vector to store the inorder traversal of the binary tree.
+// 4. create a pointer to the root of the binary tree.
+// 5. while the pointer is not NULL or the stack is not empty, do the
+// following:-
+//  a. if the pointer is not NULL, push the pointer to the stack and move the pointer to the left child of the pointer.
+//  b. if the pointer is NULL, pop the top element from the stack and add the data of the popped element to the vector. Move the pointer to the right child of the popped element.  
+// 6. finally, return the vector containing the inorder traversal of the binary tree.
 vector<int> inorderTraversal(Node* root) {
     stack<Node*> st;
     Node *node = root;

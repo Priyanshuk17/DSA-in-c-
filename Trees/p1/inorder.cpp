@@ -12,6 +12,14 @@ struct Node {
         left = right = NULL;
     }
 };
+//  this question is to print the inorder traversal of a binary tree.
+//  how to do it:-
+// 1. take the root of the binary tree as input.
+// 2. if the root is NULL, then return.
+// 3. recursively call the inorder function for the left subtree.
+// 4. print the data of the root.
+// 5. recursively call the inorder function for the right subtree.
+// 6. finally, return the result.
 void inorder(Node *root) {
     if(root == NULL) {
         return;

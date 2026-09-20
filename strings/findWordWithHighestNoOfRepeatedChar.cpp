@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// this question is to find the word with the highest number of repeated letters in a string.
+// how to do it:-       
+// 1. take the string as input.
+// 2. iterate through the string and for each word, count the frequency of each letter using a frequency array of size 26.
+// 3. for each word, count the number of letters that have a frequency greater than 1 (i.e., repeated letters).
+// 4. keep track of the word with the highest number of repeated letters and update it whenever a word with more repeated letters is found. 
+// 5. finally, print the word with the highest number of repeated letters. If no word has repeated letters, print "-1".
 void HighestRepeatedLetters(string &str) {
     int len = str.length();
     // Initialize variables for tracking the maximum number of repeated letters

@@ -19,6 +19,12 @@ using namespace std;
 //     return res;
 // }
 
+//  this question is to remove the characters of one string from another string.
+//  how to do it:-
+// 1. take the two strings as input.
+// 2. create an unordered_map to store the characters of the second string.     
+// 3. iterate through the first string and for each character, check if it is present in the unordered_map. If it is not present, then we will add it to the result string.
+// 4. finally, return the result string.
 string removeChar(string &s1, string &s2) {
     unordered_map<char, bool> removeMap;
 

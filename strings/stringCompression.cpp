@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// this question is to compress a string by replacing consecutive repeating characters with the character followed by the count of repetitions.
+// how to do it:-       
+// 1. take the string as input.
+// 2. iterate through the string and for each character, count the number of consecutive repetitions of that character.         
+// 3. for each character, if the count of repetitions is greater than 1, we will add the character followed by the count to the result string. If the count is 1, we will just add the character to the result string.      
+// 4. finally, return the length of the compressed string.
 int compress(vector<char> &chars) {
     int n = chars.size();
     int index = 0;
