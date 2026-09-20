@@ -20,7 +20,9 @@ int findAllSubarrayWithGivenSum(vector<int> &arr, int k) {
     return cnt;
 }
 int main() {
-
-
+    vector<int> arr = {1, 2, 3};
+    int k = 3;
+    int res = findAllSubarrayWithGivenSum(arr, k);
+    cout << res;
     return 0;
 }

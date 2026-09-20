@@ -79,6 +79,5 @@ int main() {
     fifth->next = NULL;
     bool ans = isPalindrome(head);
     cout << ans;
-    
     return 0;
 }

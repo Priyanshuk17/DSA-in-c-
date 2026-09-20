@@ -1,8 +1,7 @@
-// #include<bits/stdc++.h>
-// using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 
 // vector<int> Union(vector<int> a, vector<int> b) {
-
 //     // We have to give sorted array
 //     int n1 = a.size();
 //     int n2 = b.size();

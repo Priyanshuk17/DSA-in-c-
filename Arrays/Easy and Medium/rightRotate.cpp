@@ -23,13 +23,13 @@ using namespace std;
 // }
 
 void rightRotate(int arr[], int n, int d) {
-    d = d % n;
+     d = d % n;
     vector<int> temp;
-    for(int i = 0;i<n-d;i++) {
+    for(int i=0;i<n-d;i++) {
         temp.push_back(arr[i]);
     }
     int j = n-d;
-    for(int i = 0;i<d;i++) {
+    for(int i=n-d;i<n;i++) {
         arr[i] = arr[j];
         j++;
     }
@@ -38,7 +38,6 @@ void rightRotate(int arr[], int n, int d) {
         arr[i]  = temp[k];
         k++;
     }
-
 }
 
 // Optimal approach

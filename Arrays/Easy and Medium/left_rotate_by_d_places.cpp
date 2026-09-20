@@ -42,11 +42,6 @@ using namespace std;
 //     reverse(arr.begin(), arr.begin()+n);  
 // }
 
-// void leftRotate(vector<int>& arr, int n, int d) {
-//     reverse(arr.begin(), arr.begin()+d);
-//     reverse(arr.begin() + d,arr.begin() + n);
-//     reverse(arr.begin(), arr.end());
-// }
 int main() {
     int n;
     cin >> n;

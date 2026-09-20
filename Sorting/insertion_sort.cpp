@@ -12,7 +12,7 @@ void insertion_sort(int arr[], int n) {
             j--;
         }
     }
-} 
+}
 
 // void insertion_sort(int arr[], int n) {
 //     for(int i=0;i<n;i++) {

@@ -45,7 +45,7 @@ int removeDuplicates(int arr[], int n) {
         st.insert(arr[i]);
     }
     int index = 0;
-    for(auto it ; st) {
+    for(auto it : st) {
         arr[index] = it;
         index++;
     }

@@ -7,10 +7,10 @@ int partition(vector<int> &arr, int low, int high) {
     int i = low;
     int j = high;
     while(i < j) {
-        while(arr[i] <= pivot && i<= high-1) {
+        while(i<= high-1 && arr[i] <= pivot) {
             i++;
         }
-        while(arr[j] > pivot && j >= low + 1) {
+        while(j >= low + 1 && arr[j] > pivot) {
             j--;
         }
         if(i<j) swap(arr[i], arr[j]);
@@ -26,7 +26,6 @@ void qs(vector<int> &arr, int low, int high) {
         qs(arr,pIndex+1,high);
     }
 }
-
 vector<int> quickSort(vector<int> arr) {
     qs(arr, 0, arr.size()-1);
     return arr;

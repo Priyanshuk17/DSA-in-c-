@@ -13,6 +13,7 @@ struct Node{
 bool isLeaf(Node* root) {
     return !root->left && !root->right;
 }
+
 void addLeftBoundary(Node* root, vector<int> &res) {
     Node* curr = root->left;
     while(curr) {
@@ -49,6 +50,7 @@ void addLeaves(Node* root, vector<int> &res) {
     if(root->left) addLeaves(root->left, res);
     if(root->right) addLeaves(root->right, res);
 }
+
 vector<int> printBoundary(Node* root) {
     vector<int> res;
     if(!root) return res;
@@ -58,6 +60,7 @@ vector<int> printBoundary(Node* root) {
     addRightBoundary(root, res);
     return res;
 }
+
 int main() {
     struct Node *root = new Node(1);
     root->left = new Node(2);

@@ -15,7 +15,6 @@ using namespace std;
 //     return "No";
 // }
 
-
 // optimal approach
 string twoSumRead(int n, vector<int> arr, int target) {
     int left = 0;

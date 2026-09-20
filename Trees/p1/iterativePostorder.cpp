@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 struct Node {
     int data;
     struct Node *left;
@@ -62,6 +61,7 @@ vector<int> postorderTraversal(Node* root) {
     }
     return postorder;
 }
+
 
 int main() {
     struct Node *root = new Node(1);

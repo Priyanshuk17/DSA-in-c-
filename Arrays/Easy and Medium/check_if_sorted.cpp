@@ -4,7 +4,7 @@ using namespace std;
 int isSorted(int n, int arr[]) {
     for(int i=1;i<n;i++) {
         if(arr[i] >= arr[i-1]) {
-
+            continue;
         }
         else {
             return false;
@@ -23,6 +23,6 @@ int main() {
         cin >> arr[i];
     }
     cout << isSorted(n, arr);
-
+    
     return 0;
 }

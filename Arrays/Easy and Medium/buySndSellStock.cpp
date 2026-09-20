@@ -17,15 +17,11 @@ int main() {
     int n;
     cout << "Enter numbers of elements in an array: "<<endl;
     cin >> n;
-
     vector<int> arr(n);
     cout << "Enter " << n << " elements: " << endl;
     for(int i=0;i<n;i++) {
         cin >> arr[i];
     }
-   
-   
     cout << maximumProfit(arr);
-    
     return 0;
 }

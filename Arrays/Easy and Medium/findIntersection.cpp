@@ -38,7 +38,6 @@ vector<int> findArrayIntersection(vector<int> &a, int n, vector<int> &b, int m) 
     return ans;
 }
 int main() {
-
     // We have to give sorted array
     int n;
     cout << "Enter numbers of elements of first array: ";

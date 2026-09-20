@@ -40,6 +40,8 @@ using namespace std;
 //     }
 //     return -1;
 // }
+
+
 int majorityElement(vector<int> arr) {
     int cnt = 0;
     int el;
@@ -51,7 +53,7 @@ int majorityElement(vector<int> arr) {
         else if(arr[i] == el) {
             cnt++;
         }
-        else{
+        else {
             cnt--;
         }
     }
@@ -63,6 +65,7 @@ int majorityElement(vector<int> arr) {
         return el;
     }
 }
+
 int main() {
     int n;
     cout << "Enter numbers of elements in an array: "<<endl;

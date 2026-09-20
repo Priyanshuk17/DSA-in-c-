@@ -29,6 +29,7 @@ Node* convertArr2LL (vector<int> &arr) {
     }
     return head;
 }
+
 int lengthOfLL(Node* head) {
     int cnt = 0;
     Node* temp = head;

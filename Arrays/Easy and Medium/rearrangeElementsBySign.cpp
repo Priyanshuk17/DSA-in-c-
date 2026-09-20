@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Pos == neg
 vector<int> rearrangeArray(vector<int>& arr) {
     int n = arr.size();
     int posIndex = 0;

@@ -15,13 +15,11 @@ vector<int> moveZeroes(int n, vector<int> arr) {
     // for(int i=0;i<nz;i++) {
     //     arr[i] = temp[i];
     // }
-
-    // // step->3
+    // step->3
     // for(int i=nz;i<n;i++) {
     //     arr[i] = 0;
     // }
     // return arr;
-
     // Optimal approach
     // TC-> O(n)
     // SC-> O(1)
@@ -42,11 +40,9 @@ vector<int> moveZeroes(int n, vector<int> arr) {
 }
 // most optimal one
 // void moveZeroes(vector<int>& nums) {
-        
 //     //what ?
 //     //shift all non element to the left
 //     int nonZero = 0;
-
 //     for(int j=0;j<nums.size(); j++) {
 //         if(nums[j] != 0) {
 //             swap(nums[j], nums[nonZero]);
